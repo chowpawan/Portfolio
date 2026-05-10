@@ -582,10 +582,14 @@ footer small{
   overflow: hidden;
   border: 1px solid #d4d4e3;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .project .project-item-inner .project-img{
   width: 100%;
   display: block;
+  flex-shrink: 0;
 }
 .project .project-item-inner .project-img img{
   width: 100%;
@@ -599,7 +603,9 @@ footer small{
 .project .project-item-inner .project-info{
   padding: 30px 15px;
   background-color: #fdf9ff;
-
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 .project .project-item-inner .project-info .project-title{
   font-size: 18px;
@@ -614,6 +620,7 @@ footer small{
   color: #504e70;
   font-weight: 400;
   margin-bottom: 15px;
+  flex: 1;
 }
 
 
