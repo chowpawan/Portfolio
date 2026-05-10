@@ -107,7 +107,7 @@
                         <p>Mail : <span>pawanpoka3333@gmail.com</span> </p>
                       </div>
                       <div class="info-item padd-15">
-                        <p>Hobbies : <span>Coding and Volleyball</span> </p>
+                        <p>Hobbies : <span>Coding, Volleyball, Hiking & National Parks</span> </p>
                       </div>
                 
                     </div>
@@ -277,15 +277,13 @@
                             </h6>
                             <h4 class="timeline-title">Intuit, Software Engineer II — QuickBooks Sales & Invoicing</h4>
                             <p class="timeline-text">
-                              <ul style="margin-top: 8px; padding-left: 18px;">
-                                <li style="margin-bottom: 6px;">Owned the migration of 13 APIs (6 Neo domain, 7 V3) from the legacy QuickBooks monolith to the modern Java/Spring Boot stack on Kubernetes.</li>
-                                <li style="margin-bottom: 6px;">Drove Settings domain integration into the Sales service and introduced a Redis-backed caching layer that reduced p90 latency from ~4x to ~1x of the SLA target on the hottest read paths.</li>
-                                <li style="margin-bottom: 6px;">Designed and shipped 4 GraphQL endpoints powering the entire Sales surface in the QuickBooks mobile app, replacing fragmented REST calls with a single round-trip.</li>
-                                <li style="margin-bottom: 6px;">Operate a tier-0 service processing 50,000+ transactions/minute and $1–2B/fiscal year — orchestrates 12 downstream services and consumes Kafka events across multiple topics.</li>
-                                <li style="margin-bottom: 6px;">Primary on-call (1-week primary / 1-week secondary). During a US-East regional P0, identified the broken downstream call in ~10 minutes and led traffic cutover to restore customer functionality.</li>
-                                <li style="margin-bottom: 6px;">Root-caused an unbounded in-memory cache causing OOM pod crashes; shipped a 15-minute fix (lifecycle-scoped cleanup) that fully closed the incident.</li>
-                              </ul>
-                              <strong>Stack:</strong> Java, Spring Boot, Kafka, Docker, Kubernetes, AWS, Redis, Splunk
+                              I work on the QuickBooks Sales & Invoicing platform — one of Intuit's most critical backend services, handling over 50,000 transactions per minute and billions in annual payments. My day-to-day sits at the intersection of large-scale distributed systems and real user impact: the work I ship directly affects how small business owners create invoices and get paid.
+                              <br><br>
+                              A big part of my role has been leading the migration of legacy QuickBooks APIs onto a modern Java/Spring Boot microservices stack running on Kubernetes — essentially breaking apart a monolith that's been around for years and giving each domain its own clean, maintainable service. I also introduced a Redis caching layer that cut our worst-case latency by 4x on the hottest read paths, and designed the GraphQL layer that powers the entire Sales surface in the QuickBooks mobile app.
+                              <br><br>
+                              I'm primary on-call for the platform, which has shaped how I think about reliability. When a US-East P0 took down invoice creation for an entire region, I traced the failure to an open circuit breaker within 10 minutes and led the traffic cutover that restored service. The root cause — an unbounded in-memory cache slowly OOM-crashing pods — took two days to fully understand but only 15 minutes to fix once we had the answer.
+                              <br><br>
+                              <strong>Stack:</strong> Java, Spring Boot, Kafka, Kubernetes, AWS, Redis, Docker, Splunk
                             </p>
                           </div>
                           <div class="timeline-item">
