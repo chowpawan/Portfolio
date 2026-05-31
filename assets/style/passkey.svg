@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a1a2e"/>
+      <stop offset="1" stop-color="#16213e"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#5b7db1"/>
+    </marker>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <text x="40" y="58" fill="#ffffff" font-size="30" font-weight="700">PassKey</text>
+  <text x="40" y="86" fill="#8aa0c8" font-size="16">Passwordless vault unlocked with WebAuthn</text>
+
+  <!-- flow nodes -->
+  <!-- 1. Authenticator -->
+  <g>
+    <rect x="40" y="150" width="150" height="120" rx="12" fill="#22243f" stroke="#3a3f66" stroke-width="1.5"/>
+    <circle cx="115" cy="200" r="22" fill="none" stroke="#e10098" stroke-width="3"/>
+    <path d="M104 200 a11 11 0 0 1 22 0 M108 207 a7 7 0 0 1 14 0 M112 213 a3 3 0 0 1 6 0" fill="none" stroke="#e10098" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="115" y="245" fill="#ffffff" font-size="14" font-weight="600" text-anchor="middle">Passkey</text>
+    <text x="115" y="262" fill="#8aa0c8" font-size="11" text-anchor="middle">Device biometric</text>
+  </g>
+
+  <!-- 2. WebAuthn -->
+  <g>
+    <rect x="245" y="150" width="150" height="120" rx="12" fill="#22243f" stroke="#3a3f66" stroke-width="1.5"/>
+    <text x="320" y="198" fill="#e10098" font-size="26" font-weight="700" text-anchor="middle">⚷</text>
+    <text x="320" y="232" fill="#ffffff" font-size="14" font-weight="600" text-anchor="middle">WebAuthn</text>
+    <text x="320" y="249" fill="#8aa0c8" font-size="11" text-anchor="middle">py_webauthn</text>
+    <text x="320" y="263" fill="#8aa0c8" font-size="11" text-anchor="middle">challenge ceremony</text>
+  </g>
+
+  <!-- 3. FastAPI -->
+  <g>
+    <rect x="450" y="150" width="150" height="120" rx="12" fill="#22243f" stroke="#3a3f66" stroke-width="1.5"/>
+    <rect x="490" y="184" width="70" height="22" rx="11" fill="#009688"/>
+    <text x="525" y="200" fill="#ffffff" font-size="12" font-weight="700" text-anchor="middle">FastAPI</text>
+    <text x="525" y="232" fill="#ffffff" font-size="14" font-weight="600" text-anchor="middle">Backend</text>
+    <text x="525" y="249" fill="#8aa0c8" font-size="11" text-anchor="middle">HttpOnly session</text>
+    <text x="525" y="263" fill="#8aa0c8" font-size="11" text-anchor="middle">cookies</text>
+  </g>
+
+  <!-- 4. Vault -->
+  <g>
+    <rect x="655" y="150" width="105" height="120" rx="12" fill="#22243f" stroke="#3a3f66" stroke-width="1.5"/>
+    <rect x="692" y="180" width="32" height="24" rx="4" fill="none" stroke="#f9a825" stroke-width="2.6"/>
+    <path d="M700 180 v-7 a8 8 0 0 1 16 0 v7" fill="none" stroke="#f9a825" stroke-width="2.6"/>
+    <text x="707" y="230" fill="#ffffff" font-size="14" font-weight="600" text-anchor="middle">Vault</text>
+    <text x="707" y="248" fill="#8aa0c8" font-size="11" text-anchor="middle">AES-GCM</text>
+    <text x="707" y="262" fill="#8aa0c8" font-size="11" text-anchor="middle">encrypted</text>
+  </g>
+
+  <!-- arrows -->
+  <line x1="192" y1="210" x2="241" y2="210" stroke="#5b7db1" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="397" y1="210" x2="446" y2="210" stroke="#5b7db1" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="602" y1="210" x2="651" y2="210" stroke="#5b7db1" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <text x="40" y="345" fill="#ffffff" font-size="15" font-weight="600">No master password</text>
+  <text x="40" y="368" fill="#8aa0c8" font-size="13">Phishing-resistant login: the private key never leaves the device,</text>
+  <text x="40" y="388" fill="#8aa0c8" font-size="13">and vault entries are encrypted at rest with AES-GCM.</text>
+
+  <g font-size="12" fill="#8aa0c8">
+    <rect x="40" y="408" width="720" height="0.6" fill="#3a3f66"/>
+    <text x="40" y="432">FastAPI</text>
+    <text x="110" y="432">·  React</text>
+    <text x="185" y="432">·  TypeScript</text>
+    <text x="290" y="432">·  WebAuthn</text>
+    <text x="390" y="432">·  AES-GCM</text>
+  </g>
+</svg>

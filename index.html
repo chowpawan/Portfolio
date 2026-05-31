@@ -139,11 +139,20 @@
                         </div>
                       </div>
                       <div class="skill-item languages padd-15">
-                        <h4>JavaScript</h4>
+                        <h4>TypeScript / JavaScript</h4>
                         <div class="progress">
-                          <div class="progress-in" style="width: 80%"></div>
+                          <div class="progress-in" style="width: 82%"></div>
                             <div class="skill-percent">
-                              80%
+                              82%
+                          </div>
+                        </div>
+                      </div>
+                      <div class="skill-item languages padd-15">
+                        <h4>Go</h4>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 75%"></div>
+                            <div class="skill-percent">
+                              75%
                           </div>
                         </div>
                       </div>
@@ -220,7 +229,66 @@
                           </div>
                         </div>
                       </div>
-                     
+                      <div class="skill-item web-technologies padd-15">
+                        <h4>GraphQL</h4>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 85%"></div>
+                            <div class="skill-percent">
+                              85%
+                          </div>
+                        </div>
+                      </div>
+                      <div class="skill-item web-technologies padd-15">
+                        <h4>FastAPI</h4>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 85%"></div>
+                            <div class="skill-percent">
+                              85%
+                          </div>
+                        </div>
+                      </div>
+                      <div class="skill-item web-technologies padd-15">
+                        <h4>React</h4>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 80%"></div>
+                            <div class="skill-percent">
+                              80%
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="skills padd-15">
+                    <div class="row">
+                      <h1 class="padd-15">Data & Observability</h1>
+                      <div class="skill-item web-technologies padd-15">
+                        <h4>PostgreSQL & MySQL</h4>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 88%"></div>
+                            <div class="skill-percent">
+                              88%
+                          </div>
+                        </div>
+                      </div>
+                      <div class="skill-item web-technologies padd-15">
+                        <h4>Redis & MongoDB</h4>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 85%"></div>
+                            <div class="skill-percent">
+                              85%
+                          </div>
+                        </div>
+                      </div>
+                      <div class="skill-item web-technologies padd-15">
+                        <h4>Prometheus & Grafana</h4>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 85%"></div>
+                            <div class="skill-percent">
+                              85%
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -318,6 +386,24 @@
               <div class="project-item padd-15">
                 <div class="project-item-inner shadow-dark">
                   <div class="project-img">
+                    <img src="assets/style/passkey.svg" alt="PassKey Password Vault">
+                  </div>
+                  <div class="project-info">
+                    <h4 class="project-title">PassKey - Passwordless Vault</h4>
+                    <p class="project-description">
+                      A password vault unlocked with a passkey instead of a master password. Implements the full WebAuthn ceremony with py_webauthn, AES-GCM-encrypted vault entries, and HttpOnly session cookies for a passwordless, phishing-resistant login flow.
+                    </p>
+                    <p style="margin-top: 8px; color: #666; font-size: 14px;"><strong>Tech Stack:</strong> FastAPI, React, TypeScript, WebAuthn, AES-GCM</p>
+                    <div class="buttons">
+                      <a href="https://github.com/chowpawan/PassKey" class="btn">View Project</a>
+                      <a href="https://pass-key-self.vercel.app" target="_blank" class="btn">Live Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-item padd-15">
+                <div class="project-item-inner shadow-dark">
+                  <div class="project-img">
                     <img src="assets/style/eventbus.png" alt="Distributed Event Bus Framework">
                   </div>
                   <div class="project-info">
@@ -369,16 +455,16 @@
               <div class="project-item padd-15">
                 <div class="project-item-inner shadow-dark">
                   <div class="project-img">
-                    <img src="assets/style/ecommerce.png" alt="Microservices E-Commerce Platform">
+                    <img src="assets/style/minikv.svg" alt="MiniKV LSM-Tree Key-Value Store">
                   </div>
                   <div class="project-info">
-                    <h4 class="project-title">Microservices E-Commerce Platform</h4>
+                    <h4 class="project-title">MiniKV - Write-Optimized Key-Value Store</h4>
                     <p class="project-description">
-                      Spring Cloud services (orders, inventory, payments, notifications) wired via Kafka for event-driven communication. Features MySQL read replicas for horizontal read scaling, Redis caching, and Kubernetes blue-green deployments for zero-downtime releases.
+                      A write-optimized key-value store built from scratch on an LSM-Tree design: writes flow through a Write-Ahead Log into an in-memory MemTable, then flush to immutable SSTables on disk. Bloom filters skip SSTables that cannot contain a key, keeping reads fast as data grows.
                     </p>
-                    <p style="margin-top: 8px; color: #666; font-size: 14px;"><strong>Tech Stack:</strong> Java, Spring Cloud, Kafka, MySQL, Redis, Kubernetes, Docker</p>
+                    <p style="margin-top: 8px; color: #666; font-size: 14px;"><strong>Tech Stack:</strong> Java, LSM-Tree, WAL, SSTables, Bloom Filters</p>
                     <div class="buttons">
-                      <a href="https://github.com/chowpawan/ecommerce-microservices" class="btn">View Project</a>
+                      <a href="https://github.com/chowpawan/MiniKV" class="btn">View Project</a>
                     </div>
                   </div>
                 </div>
