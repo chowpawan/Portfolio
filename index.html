@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Venkata Poka - Software Engineer II | Backend & Distributed Systems</title>
+    <title>Venkata Poka - Software Engineer II | Distributed Systems, Storage & Streaming</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Software Engineer II at Intuit on the QuickBooks Sales & Invoicing platform, processing 50K+ transactions/minute and $1–2B in payments annually. Expert in Java, Spring Boot, Kafka, Kubernetes, and distributed systems.">
     <meta name="keywords" content="Java Developer, Backend Developer, Spring Boot, Distributed Systems, Kafka, Kubernetes, Microservices, Cloud Computing, AWS">
@@ -66,7 +66,7 @@
             <div class="intro">
              <img src="assets/style/profile.jpg" alt="profile-image" border="0">
               <h1>Venkata Poka</h1>
-              <p>Software Engineer II · Backend & Distributed Systems | Intuit, QuickBooks Sales & Invoicing. System of record for 12 transaction types processing 50K+ transactions/minute and $1–2B in payments annually. Driving monolith-to-microservices modernization on Java, Spring Boot, Kafka, and Kubernetes (AWS).</p>
+              <p>Software Engineer II · Distributed Systems, Storage & Streaming Infrastructure | Intuit, QuickBooks Sales & Invoicing. Operating a tier-0 service processing 50K+ transactions/minute and $1–2B in payments annually across multi-topic Kafka events. Driving monolith-to-microservices modernization on Java, Spring Boot, Kafka, and Kubernetes (AWS), with a deep interest in storage and streaming internals.</p>
               <div class="social-link">
                 <a href="https://www.linkedin.com/in/pavankalp/" target="_blank"> <i class="fa fa-linkedin"></i> </a>
                 <a href="mailto:pawanpoka3333@gmail.com" target="_blank"> <i class="fa fa-envelope-o"></i> </a>
@@ -87,12 +87,12 @@
                 <div class="row">
                   <div class="about-text padd-15">
                     <h3>Professional Overview</h3>
-                    <p>Backend SDE-2 at Intuit on the QuickBooks Sales & Invoicing platform, the system of record for 12 transaction types processing 50K+ transactions/minute and $1–2B in payments annually. Driving the monolith-to-microservices modernization on Java, Spring Boot, Kafka, and Kubernetes (AWS). My expertise includes:</p>
+                    <p>Backend SDE-2 at Intuit on the QuickBooks Sales & Invoicing platform, a tier-0 service processing 50K+ transactions/minute and $1–2B in payments annually while orchestrating 12 downstream services over multi-topic Kafka events. Driving the monolith-to-microservices modernization on Java, Spring Boot, Kafka, and Kubernetes (AWS), with a deep interest in storage and streaming internals. My expertise includes:</p>
                     <ul style="margin-top: 15px; padding-left: 20px;">
                       <li style="margin-bottom: 8px;"><strong>Distributed Systems & Microservices</strong> - Migrating APIs from legacy monolith to modern Spring Boot/Kubernetes stack; designing event-driven architectures with Kafka</li>
+                      <li style="margin-bottom: 8px;"><strong>Storage & Streaming Internals</strong> - Built MiniKV, an LSM-tree storage engine in Java (WAL, MemTable, SSTables, Bloom filters, size-tiered compaction) benchmarked at 9.25M mixed-read ops/s, and a pluggable Kafka event-bus framework with schema validation, DLQs, and idempotent producers</li>
                       <li style="margin-bottom: 8px;"><strong>Performance Optimization</strong> - Introduced Redis-backed caching that reduced p90 latency from ~4x to ~1x of SLA target; HikariCP pool tuning and Splunk dashboard analysis</li>
-                      <li style="margin-bottom: 8px;"><strong>GraphQL & REST APIs</strong> - Designed and shipped GraphQL endpoints powering the QuickBooks mobile app Sales surface, replacing fragmented REST calls with a single round-trip</li>
-                      <li style="margin-bottom: 8px;"><strong>Incident Response</strong> - Primary on-call for a tier-0 service; led P0 incident resolution and root-caused production memory/concurrency bugs</li>
+                      <li style="margin-bottom: 8px;"><strong>Incident Response</strong> - Primary on-call for a tier-0 service; led P0 incident resolution and root-caused production memory/concurrency bugs, and built a LangChain agent for AI-assisted incident triage</li>
                       <li style="margin-bottom: 8px;"><strong>Cloud & DevOps</strong> - AWS, Docker, Kubernetes, CI/CD pipelines, and observability with Splunk dashboards</li>
                     </ul>
                   </div>
@@ -304,7 +304,7 @@
                             </div>
                             <h6 class="timeline-date">
                               <i class="fa fa-calendar"></i>
-                              2022-2024
+                              2022-2023
                             </h6>
                             <h4 class="timeline-title">Southeast Missouri State University</h4>
                             <p class="timeline-text">Masters of Science in Southeast Missouri State University, Cape Girardeau, Missouri, United States.
@@ -341,15 +341,15 @@
                             </div>
                             <h6 class="timeline-date">
                               <i class="fa fa-calendar"></i>
-                              Jun, 2024 - Present
+                              Mar, 2025 - Present
                             </h6>
                             <h4 class="timeline-title">Intuit, Software Engineer II, QuickBooks Sales & Invoicing</h4>
                             <p class="timeline-text">
-                              I work on the QuickBooks Sales & Invoicing platform, one of Intuit's most critical backend services handling over 50,000 transactions per minute and billions in annual payments. My day-to-day sits at the intersection of large-scale distributed systems and real user impact: the work I ship directly affects how small business owners create invoices and get paid.
+                              I work on the QuickBooks Sales & Invoicing platform, a tier-0 backend service that processes over 50,000 transactions per minute and $1–2B per fiscal year, orchestrating 12 downstream services over multi-topic Kafka events to commit a single transaction. My day-to-day sits at the intersection of large-scale distributed systems and real user impact: the work I ship directly affects how small business owners create invoices and get paid.
                               <br><br>
-                              A big part of my role has been leading the migration of legacy QuickBooks APIs onto a modern Java/Spring Boot microservices stack running on Kubernetes, essentially breaking apart a monolith that's been around for years and giving each domain its own clean, maintainable service. I also introduced a Redis caching layer that cut our worst-case latency by 4x on the hottest read paths, and designed the GraphQL layer that powers the entire Sales surface in the QuickBooks mobile app.
+                              A big part of my role has been owning the migration of 13 APIs (6 in the Neo domain, 7 in V3) from the legacy QuickBooks monolith onto a modern Java/Spring Boot microservices stack running on Kubernetes, giving each domain its own clean, maintainable service. I also introduced a Redis-backed caching layer on the hottest read paths that cut p90 latency from ~4x to ~1x of the SLA target, and drove the Settings domain integration into the Sales service.
                               <br><br>
-                              I'm primary on-call for the platform, which has shaped how I think about reliability. When a US-East P0 took down invoice creation for an entire region, I traced the failure to an open circuit breaker within 10 minutes and led the traffic cutover that restored service. The root cause was an unbounded in-memory cache slowly OOM-crashing pods; it took two days to fully understand but only 15 minutes to fix once we had the answer.
+                              I'm primary on-call for the platform, which has shaped how I think about reliability. When a US-East P0 took down invoice creation for an entire region, I traced the failure to an open circuit breaker within 10 minutes and led the traffic cutover that restored service. The root cause was an unbounded in-memory cache slowly OOM-crashing pods; it took two days to fully understand but only 15 minutes to fix once we had the answer. I also built an end-to-end LangChain agent that fires on an on-call page, automatically investigates the failure, and surfaces a first-pass root-cause analysis, cutting manual triage toil on the rotation.
                               <br><br>
                               <strong>Stack:</strong> Java, Spring Boot, Kafka, Kubernetes, AWS, Redis, Docker, Splunk
                             </p>
@@ -360,10 +360,24 @@
                             </div>
                             <h6 class="timeline-date">
                               <i class="fa fa-calendar"></i>
-                              Nov, 2021 - May, 2022
+                              Jan, 2024 - Mar, 2025
                             </h6>
-                            <h4 class="timeline-title">Wipro Limited, Java Developer Intern</h4>
-                            <p class="timeline-text">Internship on a Java/Spring MVC + Hibernate codebase: triaged and fixed assigned bugs, wrote unit tests, and shipped fixes through code review, gaining first hands-on exposure to enterprise backend development.
+                            <h4 class="timeline-title">Humana, Software Developer</h4>
+                            <p class="timeline-text">Built and maintained backend REST APIs in Java and Spring Boot for Humana's doctor-appointment scheduling portal, covering appointment booking, provider availability, and patient-facing scheduling workflows. Worked on the payment gateway behind patient billing and copay transactions, integrating a third-party payment processor and the transaction-handling logic around it, and used Kafka for event-driven processing across services as request volume grew.
+                              <br><br>
+                              <strong>Stack:</strong> Java, Spring Boot, Kafka, REST APIs
+                            </p>
+                          </div>
+                          <div class="timeline-item">
+                            <div class="circle-dot">
+
+                            </div>
+                            <h6 class="timeline-date">
+                              <i class="fa fa-calendar"></i>
+                              Jul, 2021 - Jun, 2022
+                            </h6>
+                            <h4 class="timeline-title">Optum, Java Developer Intern</h4>
+                            <p class="timeline-text">Internship on a Java/Spring MVC + Hibernate codebase in Hyderabad, India: triaged and fixed assigned bugs, wrote unit tests, and shipped fixes through code review, gaining first hands-on exposure to enterprise backend development.
                             </p>
               </div>
                         </div>
