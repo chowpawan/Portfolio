@@ -1,10 +1,10 @@
 # Venkata Poka - Software Engineer
 
-Software Engineer at **Intuit**, currently on QuickBooks Risk Management and previously on QuickBooks Sales & Invoicing, a tier-0 service. Backend engineer working in Java, Spring Boot, Kafka, Redis, GraphQL, Kubernetes, and AWS, plus LangChain agents and MCP servers.
+Backend Software Engineer at **Intuit**, building services for QuickBooks Sales & Invoicing, a tier-0 service, and now QuickBooks Risk Management. Backend engineer working in Java, Spring Boot, Kafka, Redis, GraphQL, Kubernetes, and AWS, plus LangChain agents and MCP servers.
 
 ## 👨‍💼 About Me
 
-I write Drools rules for fraud, sanctions screening, and lending decisions on QuickBooks Risk Management. Before that I built invoice APIs on QuickBooks Sales & Invoicing, migrated sales APIs out of the monolith into a standalone service, added Redis caching that cut a company-info lookup from ~700 ms to ~2 ms, and was primary on-call for a tier-0 service. I also build AI tooling: a LangChain agent backed by a Splunk MCP server that cut on-call triage from 45 to 10 minutes, and an MCP server used by 250+ engineers across 10 teams.
+On QuickBooks Sales & Invoicing, a tier-0 service, I built the invoice creation APIs, migrated sales APIs out of the monolith into a standalone service, added Redis caching that cut a company-info lookup from ~700 ms to ~2 ms, and was primary on-call. I now write Drools rules for fraud, sanctions screening, and lending decisions on QuickBooks Risk Management. I also build AI tooling: a LangChain agent backed by a Splunk MCP server that cut on-call triage from 45 to 10 minutes, and an MCP server used by 250+ engineers across 10 teams.
 
 **Key Focus Areas:**
 - Microservices & Migrations - V3 API orchestration design, monolith-to-service migration with side-by-side response comparison and staged traffic shifts
