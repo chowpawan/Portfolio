@@ -25,7 +25,7 @@ On QuickBooks Sales & Invoicing, a tier-0 service, I built the invoice creation 
 
 **Cloud & DevOps:** AWS (EKS, EC2, S3, SQS/SNS, DynamoDB, RDS, Lambda), Docker, Kubernetes, Git, Maven, Jenkins, CI/CD
 
-**Data & Messaging:** Kafka, Redis, MySQL, PostgreSQL, SQL Server, MongoDB
+**Data & Messaging:** Kafka, Redis, PostgreSQL, MySQL, SQL Server, MongoDB
 
 **Practices:** Agile/Scrum, SDLC, TDD, object-oriented design, microservices, event-driven design, Saga, idempotency, code review, Karate/JUnit/TestContainers, Splunk, Prometheus, Grafana
 
@@ -99,10 +99,13 @@ Event bus on Kafka with schema validation, dead letter queues, retries, and lag 
 
 ## 📱 Portfolio Features
 
+- 📊 **Impact stats** - animated counters on the home page for the headline results (triage 45 to 10 min, lookups ~700 ms to ~2 ms, 250+ MCP users, 380+ PRs reviewed)
+- 🚨 **P0 case study** - interactive timeline of a US-East incident, from page to fix, with play, step, and keyboard controls
+- 🧩 **Skill chips** - grouped tech tags that show where each skill was used, with Intuit / Humana / Optum / Projects filters
+- 💻 **Terminal mode** - press the backtick key (or the hero button) for a terminal with `whoami`, `experience`, `projects`, `stats`, `oncall`, `goto`, `theme`, and more
+- 🌙 Dark mode by default, with a light mode toggle
 - 🎨 Multi-theme support (Red, Blue, Green, Purple, Yellow)
-- 🌙 Dark mode toggle
-- 📱 Fully responsive design
-- ⚡ Performance optimized
+- 📱 Fully responsive design, and respects reduced-motion settings
 - 🔍 SEO optimized with meta tags and social sharing support
 
 ---

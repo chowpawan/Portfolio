@@ -48,7 +48,8 @@
       const duration = 1600;
       const start = performance.now();
       function tick(now) {
-        const t = Math.min((now - start) / duration, 1);
+        // rAF timestamps can predate `start`, so clamp to keep progress in [0, 1]
+        const t = Math.max(0, Math.min((now - start) / duration, 1));
         const eased = 1 - Math.pow(1 - t, 3);
         el.textContent = Math.round(from + (to - from) * eased);
         if (t < 1) requestAnimationFrame(tick);
