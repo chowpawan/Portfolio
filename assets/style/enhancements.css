@@ -101,6 +101,47 @@ kbd{
   background: var(--chip-bg);
 }
 
+/* ---------- About: overview list ---------- */
+.about .about-content .about-text ul li{
+  color: var(--ink-soft);
+  line-height: 25px;
+}
+.about .about-content .about-text ul li strong{
+  color: var(--ink);
+}
+
+/* ---------- Dark mode fixes for inline-styled blocks ---------- */
+/* These elements carry inline colors in index.html, so overrides need !important */
+body.dark #testimonials .shadow-dark{
+  background: #222222 !important;
+}
+body.dark #testimonials .shadow-dark p{
+  color: #e9e9e9 !important;
+}
+body.dark #testimonials .shadow-dark p strong{
+  color: #ffffff;
+}
+body.dark .project .project-info p[style]{
+  color: #b5b5b5 !important;
+}
+
+/* ---------- Company logos ---------- */
+.company-logo{
+  display: inline-flex;
+  align-items: center;
+  height: 34px;
+  padding: 6px 12px;
+  margin-bottom: 10px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.company-logo img{
+  height: 18px;
+  width: auto;
+  display: block;
+}
+
 /* ---------- Skill chips ---------- */
 .about .about-content .stack{
   flex: 0 0 100%;

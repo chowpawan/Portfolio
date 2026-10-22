@@ -34,6 +34,7 @@ On QuickBooks Sales & Invoicing, a tier-0 service, I built the invoice creation 
 ## 💼 Professional Experience
 
 ### Intuit - Software Engineer (Mar 2025 - Present)
+*Also used at Intuit: PostgreSQL, Claude Code, Cursor, Gemini*
 
 **QuickBooks Risk Management (Aug 2026 - Present)** · *Java, Drools, Spring Boot*
 - Write and ship Drools rules (DRL and BPMN flows) for fraud, sanctions screening, and Mastercard Match, packaged as Maven KJARs, tested with JUnit, and released through Jenkins to the Risk Onboarding Service; wrote the team's rule-release guide
