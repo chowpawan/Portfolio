@@ -1,6 +1,6 @@
 # Venkata Poka - Software Engineer
 
-Backend Software Engineer at **Intuit**, building services for QuickBooks Sales & Invoicing, a tier-0 service, and now QuickBooks Risk Management. Backend engineer working in Java, Spring Boot, Kafka, Redis, GraphQL, Kubernetes, and AWS, plus LangChain agents and MCP servers.
+Software Engineer at **Intuit**, building services for QuickBooks Sales & Invoicing, a tier-0 service, and now QuickBooks Risk Management. Backend engineer working in Java, Spring Boot, Kafka, Redis, GraphQL, Kubernetes, and AWS, plus LangChain agents and MCP servers.
 
 ## 👨‍💼 About Me
 

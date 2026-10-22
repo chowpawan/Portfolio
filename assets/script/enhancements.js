@@ -168,7 +168,7 @@
   const data = {
     whoami: [
       ["accent", "Venkata Pavan Poka"],
-      ["", "Backend Software Engineer at Intuit · Mountain View, CA"],
+      ["", "Software Engineer at Intuit · Mountain View, CA"],
       ["muted", "Java, Spring, Kafka, Redis, GraphQL, AWS EKS · LangChain agents & MCP servers"],
     ],
     experience: [
