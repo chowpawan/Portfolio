@@ -25,6 +25,7 @@
     <link rel="stylesheet" title="green" class="alternate-style" href="./assets/style/green.css" type="text/css" disabled>
     <link rel="stylesheet" title="blue" class="alternate-style" href="./assets/style/blue.css" type="text/css" disabled>
     <link rel="stylesheet" href="./assets/style/themeSwitcher.css" type="text/css">
+    <link rel="stylesheet" href="./assets/style/enhancements.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
@@ -46,6 +47,7 @@
         <ul>
           <li><a href="#home" class="active"> Home </a></li>
           <li><a href="#about"> About Me</a></li>
+          <li><a href="#case-study"> P0 Case Study</a></li>
           <li><a href="#projects"> Projects </a></li>
           <!-- <li><a href="#problem-solving"> Problem Solving </a></li> -->
           <li><a href="#awards"> Awards & Certifications</a></li>
@@ -66,12 +68,36 @@
             <div class="intro">
              <img src="assets/style/profile.jpg" alt="profile-image" border="0">
               <h1>Venkata Poka</h1>
+              <p class="role-line">Backend Engineer at Intuit &middot; <span class="role-rotator" aria-live="polite">Distributed Systems</span></p>
               <p>Backend Software Engineer at Intuit. On QuickBooks Sales and Invoicing, a tier-0 service, I built the invoice creation APIs, migrated QuickBooks sales APIs out of the monolith into a standalone service, and added Redis caching that cut a company-info lookup from ~700 ms to ~2 ms, all in Java, Spring, Kafka, Redis, and GraphQL on AWS EKS. I also built LangChain agents and MCP servers that cut on-call triage from 45 to 10 minutes. Now on QuickBooks Risk Management, writing Drools rules for fraud and lending decisions.</p>
               <div class="social-link">
                 <a href="https://www.linkedin.com/in/pavankalp/" target="_blank"> <i class="fa fa-linkedin"></i> </a>
                 <a href="mailto:pawanpoka3333@gmail.com" target="_blank"> <i class="fa fa-envelope-o"></i> </a>
                 <a href="https://github.com/chowpawan" target="_blank"> <i class="fa fa-github"></i> </a>
                 </div>
+              <div class="impact-stats">
+                <div class="stat">
+                  <div class="stat-value"><span class="count" data-from="45" data-to="10">10</span><small>min</small></div>
+                  <div class="stat-label">On-call triage, down from 45 min with my LangChain agent</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value"><span class="count" data-from="700" data-to="2">2</span><small>ms</small></div>
+                  <div class="stat-label">Company-info lookup, down from ~700 ms with Redis caching</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value"><span class="count" data-from="0" data-to="250">250</span><small>+</small></div>
+                  <div class="stat-label">Engineers across 10 teams using my MCP server</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value"><span class="count" data-from="0" data-to="380">380</span><small>+</small></div>
+                  <div class="stat-label">Pull requests reviewed on QuickBooks</div>
+                </div>
+              </div>
+              <div class="hero-actions">
+                <a href="#case-study" class="btn" data-goto="case-study">Read the P0 story</a>
+                <button type="button" class="btn btn-ghost" data-terminal-open><span class="mono">&gt;_</span> Open terminal</button>
+              </div>
+              <p class="terminal-hint">Tip: press <kbd>`</kbd> anywhere to open the terminal</p>
             </div>
           </div>
         </section>
@@ -117,227 +143,95 @@
                       </div>
                     </div>
                   </div>
-                  <div class="skills padd-15">
-                    <div class="row">
-                      <h1 class="padd-15">Languages</h1>
-                      <div class="skill-item languages padd-15">
-                        <h4>Java</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 95%"></div>
-                            <div class="skill-percent">
-                              95%
-                          </div>
-                        </div>
-                      </div>
-                      <div class="skill-item languages padd-15">
-                        <h4>Python</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 85%"></div>
-                            <div class="skill-percent">
-                              85%
-                          </div>
-                        </div>
-                      </div>
-                      <div class="skill-item languages padd-15">
-                        <h4>TypeScript / JavaScript</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 82%"></div>
-                            <div class="skill-percent">
-                              82%
-                          </div>
-                        </div>
-                      </div>
-                      <div class="skill-item languages padd-15">
-                        <h4>SQL</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 88%"></div>
-                            <div class="skill-percent">
-                              88%
-                          </div>
-                        </div>
+                  <div class="stack padd-15">
+                    <div class="stack-head">
+                      <h3>Tech I Work With</h3>
+                      <div class="stack-filter" role="group" aria-label="Filter skills by where I used them">
+                        <button type="button" class="filter-btn active" data-filter="all">All</button>
+                        <button type="button" class="filter-btn" data-filter="intuit">Intuit</button>
+                        <button type="button" class="filter-btn" data-filter="humana">Humana</button>
+                        <button type="button" class="filter-btn" data-filter="optum">Optum</button>
+                        <button type="button" class="filter-btn" data-filter="projects">Projects</button>
                       </div>
                     </div>
-                  </div>
-                  <div class="skills padd-15">
-                    <div class="row">
-                      <h1 class="padd-15">Computing Essentials</h1>
-                      <div class="skill-item IT_Constructs padd-15">
-                        <h4>Data Structures & Algorithms</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 92%"></div>
-                            <div class="skill-percent">
-                              92%
-                          </div>
-                        </div>
+                    <p class="stack-where" aria-live="polite">Hover or tap a skill to see where I used it.</p>
+                    <div class="stack-groups">
+                      <div class="stack-group">
+                        <h4>Languages</h4>
+                        <ul>
+                          <li><button type="button" class="chip" data-tags="intuit humana optum projects" data-where="Intuit, Humana, Optum, MiniKV, Payment Processing, CentSight, Event Bus">Java 11/17/21</button></li>
+                          <li><button type="button" class="chip" data-tags="intuit" data-where="Intuit: LangChain triage agent and MCP servers">Python</button></li>
+                          <li><button type="button" class="chip" data-tags="intuit projects" data-where="Intuit: MCP server over the sales service database; CentSight on PostgreSQL">SQL</button></li>
+                          <li><button type="button" class="chip" data-tags="optum projects" data-where="Optum UI changes, CentSight, PassKey">JavaScript / TypeScript</button></li>
+                          <li><button type="button" class="chip" data-tags="" data-where="Hands-on experience, not tied to a specific role above">J2EE</button></li>
+                        </ul>
                       </div>
-                      <div class="skill-item IT_Constructs padd-15">
-                        <h4>System Design</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 95%"></div>
-                            <div class="skill-percent">
-                              95%
-                          </div>
-                        </div>
+                      <div class="stack-group">
+                        <h4>Backend</h4>
+                        <ul>
+                          <li><button type="button" class="chip" data-tags="intuit humana projects" data-where="Humana APIs, Intuit Risk Management, Payment Processing, CentSight, Event Bus">Spring Boot</button></li>
+                          <li><button type="button" class="chip" data-tags="intuit optum" data-where="Intuit Sales &amp; Invoicing, Optum">Spring MVC</button></li>
+                          <li><button type="button" class="chip" data-tags="intuit humana projects" data-where="Intuit invoice creation APIs, Humana scheduling and payment APIs, CentSight">REST APIs</button></li>
+                          <li><button type="button" class="chip" data-tags="intuit" data-where="Intuit: QuickBooks mobile endpoints (Estimate Status, invoice summary and more)">GraphQL</button></li>
+                          <li><button type="button" class="chip" data-tags="optum" data-where="Optum codebase">JPA / Hibernate</button></li>
+                          <li><button type="button" class="chip" data-tags="projects" data-where="PassKey">FastAPI</button></li>
+                          <li><button type="button" class="chip" data-tags="optum projects" data-where="CentSight PWA, PassKey, Optum UI">React</button></li>
+                          <li><button type="button" class="chip" data-tags="intuit" data-where="Intuit Risk Management: fraud, sanctions, and lending rules">Drools (DRL &amp; BPMN)</button></li>
+                        </ul>
                       </div>
-                      <div class="skill-item IT_Constructs padd-15">
-                        <h4>Dynamic Programming</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 88%"></div>
-                            <div class="skill-percent">
-                              88%
-                          </div>
-                        </div>
+                      <div class="stack-group">
+                        <h4>Cloud &amp; DevOps</h4>
+                        <ul>
+                          <li><button type="button" class="chip" data-tags="intuit" data-where="Intuit: QuickBooks sales service">AWS EKS</button></li>
+                          <li><button type="button" class="chip" data-tags="intuit" data-where="Intuit: Redis caching for a dozen+ downstream calls">AWS ElastiCache</button></li>
+                          <li><button type="button" class="chip" data-tags="humana" data-where="Humana: event-driven payment processing">AWS SQS</button></li>
+                          <li><button type="button" class="chip" data-tags="intuit" data-where="Intuit: standalone sales service and print templates in the Docker image">Docker</button></li>
+                          <li><button type="button" class="chip" data-tags="intuit" data-where="Intuit: standalone sales service">Kubernetes</button></li>
+                          <li><button type="button" class="chip" data-tags="intuit" data-where="Intuit: sales service and Drools rule releases">Jenkins</button></li>
+                          <li><button type="button" class="chip" data-tags="intuit" data-where="Intuit: sales service and rule KJARs">Maven</button></li>
+                          <li><button type="button" class="chip" data-tags="projects" data-where="CentSight: AWS deployment">Terraform</button></li>
+                        </ul>
                       </div>
-                    </div>
-                  </div>
-                  <div class="skills padd-15">
-                    <div class="row">
-                      <h1 class="padd-15">Backend Technologies</h1>
-                      <div class="skill-item web-technologies padd-15">
-                        <h4>Spring Boot & Microservices</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 92%"></div>
-                            <div class="skill-percent">
-                              92%
-                          </div>
-                        </div>
+                      <div class="stack-group">
+                        <h4>Data &amp; Messaging</h4>
+                        <ul>
+                          <li><button type="button" class="chip" data-tags="intuit humana projects" data-where="Intuit data sync, Humana payment events, Event Bus">Kafka</button></li>
+                          <li><button type="button" class="chip" data-tags="intuit projects" data-where="Intuit caching, Payment Processing idempotency keys, API Gateway rate limiting">Redis</button></li>
+                          <li><button type="button" class="chip" data-tags="intuit projects" data-where="Intuit, CentSight">PostgreSQL</button></li>
+                          <li><button type="button" class="chip" data-tags="" data-where="Hands-on experience, not tied to a specific role above">MySQL</button></li>
+                          <li><button type="button" class="chip" data-tags="" data-where="Hands-on experience, not tied to a specific role above">SQL Server</button></li>
+                          <li><button type="button" class="chip" data-tags="" data-where="Hands-on experience, not tied to a specific role above">MongoDB</button></li>
+                        </ul>
                       </div>
-                      <div class="skill-item web-technologies padd-15">
-                        <h4>Kafka & Message Queues</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 88%"></div>
-                            <div class="skill-percent">
-                              88%
-                          </div>
-                        </div>
+                      <div class="stack-group">
+                        <h4>Testing &amp; Observability</h4>
+                        <ul>
+                          <li><button type="button" class="chip" data-tags="intuit optum projects" data-where="Intuit rules, Optum (coverage 70% to 85%), Payment Processing (27 tests)">JUnit</button></li>
+                          <li><button type="button" class="chip" data-tags="intuit" data-where="Intuit: tests for each invoice print path">Karate</button></li>
+                          <li><button type="button" class="chip" data-tags="intuit" data-where="Intuit: on-call investigation and the 9-tool Splunk MCP server">Splunk</button></li>
+                          <li><button type="button" class="chip" data-tags="projects" data-where="Event Bus metrics, API Gateway dashboards">Prometheus &amp; Grafana</button></li>
+                        </ul>
                       </div>
-                      <div class="skill-item web-technologies padd-15">
-                        <h4>Kubernetes & Docker</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 90%"></div>
-                            <div class="skill-percent">
-                              90%
-                          </div>
-                        </div>
+                      <div class="stack-group">
+                        <h4>AI Tooling</h4>
+                        <ul>
+                          <li><button type="button" class="chip" data-tags="intuit" data-where="Intuit: agent that auto-investigates on-call pages (45 to 10 min triage)">LangChain</button></li>
+                          <li><button type="button" class="chip" data-tags="intuit" data-where="Intuit: Splunk MCP server, and a sales DB MCP server used by 250+ engineers">MCP servers</button></li>
+                          <li><button type="button" class="chip" data-tags="intuit" data-where="Intuit: daily development, custom agent skills, and automation loops">Claude Code</button></li>
+                          <li><button type="button" class="chip" data-tags="intuit" data-where="Intuit: daily development">Cursor</button></li>
+                          <li><button type="button" class="chip" data-tags="intuit" data-where="Intuit: daily development and debugging">Gemini</button></li>
+                        </ul>
                       </div>
-                      <div class="skill-item web-technologies padd-15">
-                        <h4>AWS & Cloud Services</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 85%"></div>
-                            <div class="skill-percent">
-                              85%
-                          </div>
-                        </div>
-                      </div>
-                      <div class="skill-item web-technologies padd-15">
-                        <h4>GraphQL</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 85%"></div>
-                            <div class="skill-percent">
-                              85%
-                          </div>
-                        </div>
-                      </div>
-                      <div class="skill-item web-technologies padd-15">
-                        <h4>FastAPI</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 85%"></div>
-                            <div class="skill-percent">
-                              85%
-                          </div>
-                        </div>
-                      </div>
-                      <div class="skill-item web-technologies padd-15">
-                        <h4>React</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 80%"></div>
-                            <div class="skill-percent">
-                              80%
-                          </div>
-                        </div>
-                      </div>
-                      <div class="skill-item web-technologies padd-15">
-                        <h4>Drools (DRL & BPMN)</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 82%"></div>
-                            <div class="skill-percent">
-                              82%
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="skills padd-15">
-                    <div class="row">
-                      <h1 class="padd-15">Data & Observability</h1>
-                      <div class="skill-item web-technologies padd-15">
-                        <h4>PostgreSQL & MySQL</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 88%"></div>
-                            <div class="skill-percent">
-                              88%
-                          </div>
-                        </div>
-                      </div>
-                      <div class="skill-item web-technologies padd-15">
-                        <h4>Redis & MongoDB</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 85%"></div>
-                            <div class="skill-percent">
-                              85%
-                          </div>
-                        </div>
-                      </div>
-                      <div class="skill-item web-technologies padd-15">
-                        <h4>Prometheus & Grafana</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 85%"></div>
-                            <div class="skill-percent">
-                              85%
-                          </div>
-                        </div>
-                      </div>
-                      <div class="skill-item web-technologies padd-15">
-                        <h4>Splunk</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 88%"></div>
-                            <div class="skill-percent">
-                              88%
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skills padd-15">
-                    <div class="row">
-                      <h1 class="padd-15">AI Tooling</h1>
-                      <div class="skill-item web-technologies padd-15">
-                        <h4>LangChain Agents</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 85%"></div>
-                            <div class="skill-percent">
-                              85%
-                          </div>
-                        </div>
-                      </div>
-                      <div class="skill-item web-technologies padd-15">
-                        <h4>MCP Servers</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 88%"></div>
-                            <div class="skill-percent">
-                              88%
-                          </div>
-                        </div>
-                      </div>
-                      <div class="skill-item web-technologies padd-15">
-                        <h4>Claude Code, Cursor & Gemini</h4>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 90%"></div>
-                            <div class="skill-percent">
-                              90%
-                          </div>
-                        </div>
+                      <div class="stack-group">
+                        <h4>Design &amp; Practices</h4>
+                        <ul>
+                          <li><button type="button" class="chip" data-tags="intuit" data-where="Intuit: sales APIs moved out of the monolith">Microservices</button></li>
+                          <li><button type="button" class="chip" data-tags="intuit humana projects" data-where="Humana payments, Intuit Kafka sync, Event Bus">Event-driven design</button></li>
+                          <li><button type="button" class="chip" data-tags="projects" data-where="Payment Processing">Saga &amp; idempotency</button></li>
+                          <li><button type="button" class="chip" data-tags="intuit humana optum projects" data-where="Everywhere I write Java">Object-oriented design</button></li>
+                          <li><button type="button" class="chip" data-tags="optum" data-where="Two-week Agile sprints at Optum">Agile / Scrum</button></li>
+                          <li><button type="button" class="chip" data-tags="intuit" data-where="380+ pull requests reviewed at Intuit">Code review</button></li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -455,6 +349,96 @@
                     </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section case-study" id="case-study">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>P0 Case Study</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="padd-15 incident-wrap">
+                <div class="incident shadow-dark">
+                  <div class="incident-head">
+                    <span class="sev">P0</span>
+                    <div>
+                      <h3>A US-East outage blocked invoice creation</h3>
+                      <p class="incident-meta">QuickBooks Sales &amp; Invoicing &middot; tier-0 service &middot; ~50K customers affected &middot; I was primary on-call</p>
+                    </div>
+                  </div>
+                  <div class="incident-status" data-state="down">
+                    <span class="pulse"></span>
+                    Invoice creation: <strong class="status-text">Blocked</strong>
+                  </div>
+                  <ol class="incident-steps" role="tablist" aria-label="Incident timeline">
+                    <li><button type="button" role="tab" class="step active" aria-selected="true" data-step="0" data-state="down" data-status="Blocked"><span class="step-time">T+0</span><span class="step-name">Page fires</span></button></li>
+                    <li><button type="button" role="tab" class="step" aria-selected="false" data-step="1" data-state="down" data-status="Blocked"><span class="step-time">~10 min</span><span class="step-name">Isolate</span></button></li>
+                    <li><button type="button" role="tab" class="step" aria-selected="false" data-step="2" data-state="restored" data-status="Restored"><span class="step-time">Cutover</span><span class="step-name">Mitigate</span></button></li>
+                    <li><button type="button" role="tab" class="step" aria-selected="false" data-step="3" data-state="restored" data-status="Restored, root cause open"><span class="step-time">~2 days</span><span class="step-name">Root cause</span></button></li>
+                    <li><button type="button" role="tab" class="step" aria-selected="false" data-step="4" data-state="resolved" data-status="Resolved"><span class="step-time">15 min</span><span class="step-name">Fix</span></button></li>
+                  </ol>
+                  <div class="incident-panels">
+                    <div class="panel active" role="tabpanel" data-panel="0">
+                      <h4>The page fires</h4>
+                      <p>A regional failure in US-East blocked invoice creation for roughly 50,000 QuickBooks customers. Invoicing is how small businesses get paid, so every minute counted. I was primary on-call for the service.</p>
+                    </div>
+                    <div class="panel" role="tabpanel" data-panel="1" hidden>
+                      <h4>Isolate the failing call</h4>
+                      <p>The service fans out to many downstream dependencies. Working through Splunk and our dashboards, I traced the failure to a single downstream call sitting behind an open circuit breaker, in about 10 minutes.</p>
+                    </div>
+                    <div class="panel" role="tabpanel" data-panel="2" hidden>
+                      <h4>Mitigate first</h4>
+                      <p>Rather than wait for a full diagnosis, I led the traffic cutover that restored invoice creation for customers. The root cause was still unknown, but customers were unblocked.</p>
+                    </div>
+                    <div class="panel" role="tabpanel" data-panel="3" hidden>
+                      <h4>Find the real root cause</h4>
+                      <p>Pods were slowly crashing with out-of-memory errors. The culprit was an unbounded in-memory cache that kept growing until it exhausted pod memory. It took about two days to fully understand.</p>
+                      <figure class="mem-chart">
+                        <svg viewBox="0 0 420 120" role="img" aria-label="Illustration: pod memory climbs to the limit, the pod restarts, and the cycle repeats">
+                          <line x1="10" y1="22" x2="410" y2="22" class="limit"/>
+                          <text x="410" y="16" text-anchor="end" class="limit-label">memory limit</text>
+                          <polyline class="mem-line" points="10,110 60,90 100,65 130,40 145,24 146,110 196,88 236,62 266,38 281,24 282,110 332,86 372,60 402,36"/>
+                          <text x="146" y="118" text-anchor="middle" class="oom">OOM</text>
+                          <text x="282" y="118" text-anchor="middle" class="oom">OOM</text>
+                        </svg>
+                        <figcaption>Illustrative: memory climbs to the limit, the pod restarts, and it happens again.</figcaption>
+                      </figure>
+                    </div>
+                    <div class="panel" role="tabpanel" data-panel="4" hidden>
+                      <h4>Ship the fix</h4>
+                      <p>Once we had the answer, the fix took about 15 minutes: a lifecycle-scoped cache fix that closed the incident and prevented recurrence.</p>
+                    </div>
+                  </div>
+                  <div class="incident-controls">
+                    <button type="button" class="ctrl" data-ctrl="prev" aria-label="Previous step"><i class="fa fa-chevron-left"></i></button>
+                    <button type="button" class="ctrl ctrl-play" data-ctrl="play"><i class="fa fa-play"></i> <span>Play</span></button>
+                    <button type="button" class="ctrl" data-ctrl="next" aria-label="Next step"><i class="fa fa-chevron-right"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row takeaways">
+              <div class="takeaway padd-15">
+                <div class="takeaway-inner shadow-dark">
+                  <h4>Mitigate, then diagnose</h4>
+                  <p>Customers got invoicing back in minutes. The two-day investigation happened after they were unblocked.</p>
+                </div>
+              </div>
+              <div class="takeaway padd-15">
+                <div class="takeaway-inner shadow-dark">
+                  <h4>Bound every cache</h4>
+                  <p>A cache with no size or lifetime limit is a slow memory leak. Every cache needs an eviction policy, in memory or in Redis.</p>
+                </div>
+              </div>
+              <div class="takeaway padd-15">
+                <div class="takeaway-inner shadow-dark">
+                  <h4>Automate the first pass</h4>
+                  <p>I built a LangChain agent backed by a 9-tool Splunk MCP server that auto-investigates on-call pages, cutting average triage from 45 to 10 minutes.</p>
                 </div>
               </div>
             </div>
@@ -808,5 +792,6 @@
     </div>
     <script src="./assets/script/script.js"></script>
     <script src="./assets/script/themeSwitcher.js"></script>
+    <script src="./assets/script/enhancements.js"></script>
   </body>
 </html>

@@ -31,3 +31,7 @@ body.dark .aside .nav li a.active,
 .about .about-content .about-text h3 span{
   color: #ffcc00;
 }
+
+:root{
+  --skin-color: #ffcc00;
+}
