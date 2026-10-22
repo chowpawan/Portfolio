@@ -141,6 +141,19 @@ body.dark .project .project-info p[style]{
   width: auto;
   display: block;
 }
+.company-logo.lockup{
+  height: 48px;
+}
+.company-logo.lockup img{
+  height: 34px;
+}
+.company-logo.emblem{
+  height: 56px;
+  padding: 4px 8px;
+}
+.company-logo.emblem img{
+  height: 46px;
+}
 
 /* ---------- Skill chips ---------- */
 .about .about-content .stack{
